@@ -32,4 +32,8 @@ const setMessages = (newMessage) => {
   messages = newMessage;
 };
 
-export default { getMessages, setMessages };
+const setArray = () => {
+  messages = [];
+};
+
+export default { getMessages, setMessages, setArray };
