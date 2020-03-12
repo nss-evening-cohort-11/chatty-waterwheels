@@ -10,7 +10,7 @@ const addNewMessage = (e) => {
     messageId: createId.createId(),
   };
   messageData.setMessages(brandNewMessage);
-  $('#message-input').trigger('reset');
+  $('#message-input').val('');
   displayAllMessages.displayAllMessages();
 };
 
