@@ -5,7 +5,7 @@ const printToDom = (divId, textToPrint) => {
 
 const createId = () => {
   const randomNumber = Math.random().toString(36).substr(2, 16);
-  const uniqueId = `id- ${randomNumber}`;
+  const uniqueId = `id-${randomNumber}`;
   return uniqueId;
 };
 
