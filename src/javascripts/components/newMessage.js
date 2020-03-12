@@ -12,6 +12,7 @@ const addNewMessage = (e) => {
   messageData.setMessages(brandNewMessage);
   $('#message-input').val('');
   displayAllMessages.displayAllMessages();
+  $('#clear-message-btn').removeClass('disabled');
 };
 
 export default { addNewMessage };
