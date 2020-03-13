@@ -1,4 +1,4 @@
-const messages = [
+let messages = [
   {
     userId: 'user1',
     message: 'Toffee tootsie roll toffee cake cookie brownie. Tootsie roll soufflé wafer chocolate powder candy icing',
@@ -32,4 +32,8 @@ const setMessages = (newMessage) => {
   messages.push(newMessage);
 };
 
-export default { getMessages, setMessages };
+const setArray = () => {
+  messages = [];
+};
+
+export default { getMessages, setMessages, setArray };
