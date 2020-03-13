@@ -1,4 +1,4 @@
-import messageData from '../helpers/messageData';
+import messageData from '../helpers/data/messageData';
 import displayMessages from './displayMessages';
 
 const clearAllMessages = () => {
