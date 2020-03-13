@@ -1,4 +1,4 @@
-const messages = [
+let messages = [
   {
     userId: 'user1',
     message: 'Toffee tootsie roll toffee cake cookie brownie. Tootsie roll soufflé wafer chocolate powder candy icing',
