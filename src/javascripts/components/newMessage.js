@@ -20,6 +20,7 @@ const addNewMessage = (e) => {
     messageId: createId.createId(),
   };
   messageData.setMessages(brandNewMessage);
+  messageData.setLength();
   $('#message-input').val('');
   displayAllMessages.displayAllMessages();
   $('#clear-message-btn').removeClass('disabled');
