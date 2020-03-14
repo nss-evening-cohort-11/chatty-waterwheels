@@ -22,6 +22,7 @@ const addNewMessage = (e) => {
     stamp: moment().format('MMMM Do YYYY, h:mm A'),
   };
   messageData.setMessages(brandNewMessage);
+  messageData.setLength();
   $('#message-input').val('');
   displayAllMessages.displayAllMessages();
   $('#clear-message-btn').removeClass('disabled');

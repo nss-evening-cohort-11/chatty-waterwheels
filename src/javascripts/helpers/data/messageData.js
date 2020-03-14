@@ -41,4 +41,12 @@ const setArray = () => {
   messages = [];
 };
 
-export default { getMessages, setMessages, setArray };
+const setLength = () => {
+  if (messages.length > 20) {
+    messages.shift();
+  }
+};
+
+export default {
+  getMessages, setMessages, setArray, setLength,
+};

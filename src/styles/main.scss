@@ -9,6 +9,19 @@ body {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 .timestamp {
   color: #9e9e9e;
 }
+=======
+body.black {
+ filter: invert(100%);
+ background-color: black;
+}
+
+h4 {
+font-size: medium;
+color: blanchedalmond;
+margin-right: 10px;
+} 
+>>>>>>> master
