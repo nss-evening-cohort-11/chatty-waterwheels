@@ -12,7 +12,7 @@ const displayAllMessages = () => {
     domString += `<div>
       <ul class="list-group">
       <li class="list-group-item"><span class="message-text"> <span class="user-name">${userName.name} </span> : ${m.message} </span>
-      <button class="delete-indiv-message btn btn-outline-dark"  id="${m.messageId}">X</button> </li>`;
+      <button class="delete-indiv-message btn btn-outline-dark" id="${m.messageId}">X</button> </li>`;
     domString += '</ul> </div>';
   });
   utils.printToDom('message-container', domString);
