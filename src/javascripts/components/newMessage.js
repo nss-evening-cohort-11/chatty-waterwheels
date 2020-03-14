@@ -1,3 +1,4 @@
+import moment from 'moment';
 import createId from '../helpers/utils';
 import displayAllMessages from './displayMessages';
 import messageData from '../helpers/data/messageData';
@@ -18,6 +19,7 @@ const addNewMessage = (e) => {
     userId: getRadioVal(),
     message: $('#message-input').val(),
     messageId: createId.createId(),
+    stamp: moment().format('MMMM Do YYYY, h:mm A'),
   };
   messageData.setMessages(brandNewMessage);
   messageData.setLength();
