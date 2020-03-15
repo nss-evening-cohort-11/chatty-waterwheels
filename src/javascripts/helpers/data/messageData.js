@@ -37,6 +37,11 @@ const setMessages = (newMessage) => {
   messages.push(newMessage);
 };
 
+const removeMessages = (mId) => {
+  const messageIndex = messages.findIndex((x) => x.messageId === mId);
+  messages.splice(messageIndex, 1);
+};
+
 const setArray = () => {
   messages = [];
 };
@@ -48,5 +53,5 @@ const setLength = () => {
 };
 
 export default {
-  getMessages, setMessages, setArray, setLength,
+  getMessages, setMessages, setArray, setLength, removeMessages,
 };
