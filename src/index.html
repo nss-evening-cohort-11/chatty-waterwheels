@@ -9,8 +9,8 @@
 
 <body>
   <div class="static-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"><i class="fab fa-pagelines fa-2x"></i>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <a class="navbar-brand" href="#"><i class="fab fa-pagelines fa-2x text-white"></i>
       </a>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="input-text" id="message-input" placeholder="New Message" aria-label="Enter New Message">
@@ -37,17 +37,22 @@
           <input type="radio" id="user5" name="customRadio" class="custom-control-input user-radio-btns">
           <label class="custom-control-label text-light pr-2" for="user5">Mackenzie</label>
         </div>
-        </form>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="darkTime">
-        <label class="form-check-label" for="defaultCheck1">
-        </label>
-      </div>
-      <h4>Dark Mode</h4>
+        <button class="btn btn-outline-light m-2 my-sm-0" id="change-theme-btn">Change Theme</button>
   </div>
   </nav>
   </div>
   <div id="message-container"></div>
+
+  <div class="modal fade" id="changeThemeModal" tabindex="-1" role="dialog" aria-labelledby="changeThemeModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Select Your Colors</h3>
+        </div>
+        <div id="modal-inner-container" class="modal-body"></div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
