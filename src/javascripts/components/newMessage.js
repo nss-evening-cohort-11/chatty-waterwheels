@@ -1,5 +1,7 @@
+import moment from 'moment';
 import createId from '../helpers/utils';
 import displayAllMessages from './displayMessages';
+import events from '../helpers/events';
 import messageData from '../helpers/data/messageData';
 
 const getRadioVal = () => {
@@ -18,11 +20,14 @@ const addNewMessage = (e) => {
     userId: getRadioVal(),
     message: $('#message-input').val(),
     messageId: createId.createId(),
+    stamp: moment().format('MMMM Do YYYY, h:mm A'),
   };
   messageData.setMessages(brandNewMessage);
+  messageData.setLength();
   $('#message-input').val('');
   displayAllMessages.displayAllMessages();
   $('#clear-message-btn').removeClass('disabled');
+  $('.delete-indiv-message').on('click', events.deleteDisplayEvent);
 };
 
 export default { addNewMessage };
