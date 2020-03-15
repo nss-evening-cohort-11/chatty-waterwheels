@@ -1,5 +1,8 @@
 import utils from '../helpers/utils';
 
+let backgroundClass;
+let foregroundClass;
+
 const closeThemeModal = () => {
   utils.printToDom('modal-container', '');
   $('#changeThemeModal').modal('hide');
@@ -26,15 +29,20 @@ const getTextRadioVal = () => {
 };
 
 const themeClassSetter = () => {
-  $('body').removeClass();
-  $('body').addClass(getBackgroundRadioVal);
-  $('nav').removeClass('bg-dark');
-  $('nav').addClass(getBackgroundRadioVal);
-  if ($('li').hasClass()) {
-    $('li').removeClass();
-    $('li').addClass('list-group-item');
+  if (getBackgroundRadioVal()) {
+    backgroundClass = getBackgroundRadioVal();
   }
-  $('li').addClass(getTextRadioVal);
+  if (getTextRadioVal()) {
+    foregroundClass = getTextRadioVal();
+  }
+  $('body').removeClass();
+  $('body').addClass(`${backgroundClass}`);
+  $('nav').removeClass('bg-dark');
+  $('nav').addClass(`${backgroundClass}`);
+  $('li').removeClass();
+  $('li').addClass('list-group-item');
+  $('li').addClass(`${foregroundClass}`);
+
   closeThemeModal();
 };
 
