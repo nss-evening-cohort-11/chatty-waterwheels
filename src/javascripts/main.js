@@ -12,6 +12,7 @@ const init = () => {
   clear.clearButtonEvent();
   dark.darkThemeTime();
   $('body').on('click', '.delete-indiv-message', deleteMessage.deleteMessage);
+  $('body').on('change', '.user-radio-btns', displayMessages.displayAllMessages);
 };
 
 init();
