@@ -9,6 +9,10 @@ body {
   font-weight: bold;
 }
 
+.message-text {
+  margin-right: 5em;
+}
+
 .timestamp {
   color: #9e9e9e;
 }
@@ -54,3 +58,17 @@ body {
 .gray-txt {
   color: gray;
 }
+
+body.text {
+font-size: larger;
+}
+
+.my-form-check {
+  color: white;
+  padding-top: 0.3rem;
+  padding-left: 3.5rem ;
+}
+  
+.form-check-label { 
+    margin-bottom: 0;
+  }
