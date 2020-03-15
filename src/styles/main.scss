@@ -8,3 +8,31 @@ body {
 .user-name {
   font-weight: bold;
 }
+
+.timestamp {
+  color: #9e9e9e;
+}
+body.black {
+ filter: invert(100%);
+ background-color: black;
+}
+
+
+
+body.text {
+font-size: larger;
+
+};
+.my-form-check {
+  color: white;
+  padding-top: 0.3rem;
+  padding-left: 3.5rem ;
+}
+  
+.form-check-label { 
+    margin-bottom: 0;
+    // padding-bottom: 
+  }
+
+    
+
