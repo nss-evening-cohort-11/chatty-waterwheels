@@ -16,21 +16,53 @@ body {
 .timestamp {
   color: #9e9e9e;
 }
-body.black {
- filter: invert(100%);
- background-color: black;
+
+.blue-bg {
+  background-color: steelblue;
+  li {
+    background-color:lighten($color: steelblue, $amount: 30%);
+  }
+  nav {
+    background-color: darken($color: steelblue, $amount: 20%);
+  }
 }
 
-h4 {
-font-size: medium;
-color: blanchedalmond;
-margin-right: 10px;
+.red-bg {
+  background-color: maroon;
+  li {
+    background-color:lighten($color: maroon, $amount: 10%);
+  }
+  nav {
+    background-color: darken($color: maroon, $amount: 10%);
+  }
+}
+
+.green-bg {
+  background-color: olivedrab;
+  li {
+    background-color:lighten($color: olivedrab, $amount: 30%);
+  }
+  nav {
+    background-color: darken($color: olivedrab, $amount: 20%);
+  }
+}
+
+.light-txt {
+  color: whitesmoke;
+}
+
+.dark-txt {
+  color: black; 
+}
+
+.gray-txt {
+  color: gray;
 }
 
 body.text {
 font-size: larger;
+}
 
-};
 .my-form-check {
   color: white;
   padding-top: 0.3rem;
@@ -39,5 +71,4 @@ font-size: larger;
   
 .form-check-label { 
     margin-bottom: 0;
-    // padding-bottom: 
   }
