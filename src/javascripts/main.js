@@ -3,7 +3,7 @@ import '../styles/main.scss';
 import displayMessages from './components/displayMessages';
 import addNewMessage from './components/newMessage';
 import clear from './components/clearMessages';
-import events from './helpers/events';
+import deleteMessage from './components/deleteMessage';
 import dark from './helpers/data/darkThemeData';
 
 const init = () => {
@@ -11,7 +11,7 @@ const init = () => {
   $('body').on('click', '#message-submit-btn', addNewMessage.addNewMessage);
   clear.clearButtonEvent();
   dark.darkThemeTime();
-  $('.delete-indiv-message').on('click', events.deleteDisplayEvent);
+  $('body').on('click', '.delete-indiv-message', deleteMessage.deleteMessage);
 };
 
 init();

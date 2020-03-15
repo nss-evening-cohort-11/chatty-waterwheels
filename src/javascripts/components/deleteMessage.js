@@ -1,14 +1,12 @@
 import messageData from '../helpers/data/messageData';
+import displayMessages from './displayMessages';
 
-const deleteMessage = () => {
-  const messages = messageData.getMessages();
-  let buttonId = '';
-  Array.from($('.delete-indiv-message')).forEach((item) => {
-    buttonId = messages.find((x) => x.messageId === item.id); // findIdex method
-  });
-  messages.splice(buttonId, 1);
-  console.error(messages, buttonId);
-  $('.delete-indiv-message').on('click', deleteMessage);
+const deleteMessage = (e) => {
+  // e.preventDefault();
+  const messageId = e.target.closest('.message-div').id;
+  messageData.removeMessages(messageId);
+  console.error(messageId);
+  displayMessages.displayAllMessages();
 };
 
 export default { deleteMessage };
