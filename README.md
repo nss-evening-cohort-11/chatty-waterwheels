@@ -15,7 +15,7 @@ On the messages displayed there needs to be a timestap to show when the message 
 
 $$screenshot:
   
-  ![image](C:\Users\dylan\workspace\projects\group\chatty-waterwheels\src\javascripts\screenshots\chatty.png))
+  ![image](chatty.png)
 
 
 ## How to run:
