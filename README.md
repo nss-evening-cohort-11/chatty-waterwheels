@@ -18,7 +18,7 @@ On the messages displayed there needs to be a timestap to show when the message 
  ![image](src/javascripts/screenshots/chatty.png)
 
 
-## How to run: 
+### How to run: 
 If you do not have npm http-server installed, follow instuctions here to install on your device
 Use GitHub's Cloning Feature to download a local copy of the files for this project
 In your command line interface, change directory into the folder that contains your copied files
