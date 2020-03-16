@@ -5,8 +5,7 @@ import addNewMessage from './components/newMessage';
 import clear from './components/clearMessages';
 import theme from './components/changeTheme';
 import deleteMessage from './components/deleteMessage';
-import text from './helpers/data/largeTextdata';
-
+import text from './components/largeText';
 // init function that displays the messages, adds the event listeners
 const init = () => {
   displayMessages.displayAllMessages();
