@@ -39,14 +39,12 @@ const themeClassSetter = () => {
   }
   if (getTextRadioVal()) {
     foregroundClass = getTextRadioVal();
+    $('li').removeClass('light-txt').removeClass('dark-txt').removeClass('gray-txt');
   }
   $('body').removeClass();
   $('body').addClass(`${backgroundClass}`);
-  $('nav').removeClass('bg-dark');
-  $('nav').addClass(`${backgroundClass}`);
-  $('li').removeClass();
-  $('li').addClass('list-group-item');
   $('li').addClass(`${foregroundClass}`);
+  $('nav').removeClass('bg-dark');
   closeThemeModal();
   $(`#${activeUser}`).click();
 };
