@@ -6,7 +6,7 @@ import utils from '../helpers/utils';
 const printButtons = (authUserId, message) => {
   let domString = '';
   if (message.userId === authUserId) {
-    domString += '<button class="delete-indiv-message btn btn-outline-dark"><i class="fas fa-trash-alt fa-xs"></i></button>';
+    domString += '<button class="delete-indiv-message btn"><i class="fas fa-trash-alt fa-sm"></i></button>';
   }
   return domString;
 };
@@ -20,7 +20,7 @@ const displayAllMessages = () => {
     const userName = users.find((x) => x.id === m.userId);
     domString += `<div class="message-div" id="${m.messageId}">
       <ul class="list-group">
-      <li class="list-group-item"><span class="message-text"><span class="user-name">${userName.name}</span>: ${m.message}</span><span class="timestamp">(${m.stamp})</span>`;
+      <li class="list-group-item"><span class="message-text"><span class="user-name">${userName.name}</span>: ${m.message}</span><br><span class="timestamp">(${m.stamp})</span>`;
     domString += printButtons(authUserId, m);
     domString += '</li> </ul> </div>';
   });
