@@ -6,7 +6,7 @@ import utils from '../helpers/utils';
 const printButtons = (authUserId, message) => {
   let domString = '';
   if (message.userId === authUserId) {
-    domString += '<button class="delete-indiv-message btn btn-outline-dark"><i class="fas fa-trash-alt fa-xs"></i></button>';
+    domString += '<button class="delete-indiv-message btn"><i class="fas fa-trash-alt fa-sm"></i></button>';
   }
   return domString;
 };
