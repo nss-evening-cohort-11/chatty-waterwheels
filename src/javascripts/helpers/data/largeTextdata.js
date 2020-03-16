@@ -1,3 +1,4 @@
+// function that adjusts the text size of the app
 const LargeTextToggle = () => {
   const myElement = document.getElementById('large-Text');
   myElement.addEventListener('click', () => {

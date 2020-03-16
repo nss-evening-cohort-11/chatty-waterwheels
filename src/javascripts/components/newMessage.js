@@ -3,6 +3,7 @@ import utils from '../helpers/utils';
 import displayAllMessages from './displayMessages';
 import messageData from '../helpers/data/messageData';
 
+// function that adds new message to message array by unique user with a timestamp, doesn't allow an empty string to be submitted
 const addNewMessage = (e) => {
   e.preventDefault();
   const brandNewMessage = {

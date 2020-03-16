@@ -1,3 +1,4 @@
+// array that holds the id and names of users
 const users = [
   { id: 'user1', name: 'Xavier' },
   { id: 'user2', name: 'Joanna' },
@@ -6,6 +7,7 @@ const users = [
   { id: 'user5', name: 'Mackenzie' },
 ];
 
+// returns the users array
 const getUsers = () => users;
 
 export default { getUsers };
