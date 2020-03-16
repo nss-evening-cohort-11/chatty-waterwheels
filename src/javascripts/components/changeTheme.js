@@ -2,6 +2,7 @@ import utils from '../helpers/utils';
 
 let backgroundClass;
 let foregroundClass;
+let activeUser;
 
 // function to close the modal for theme selection
 const closeThemeModal = () => {
@@ -46,12 +47,13 @@ const themeClassSetter = () => {
   $('li').removeClass();
   $('li').addClass('list-group-item');
   $('li').addClass(`${foregroundClass}`);
-
   closeThemeModal();
+  $(`#${activeUser}`).click();
 };
 
 // function that dynamically prints the modal to the screen
 const openThemeModal = () => {
+  activeUser = utils.getRadioVal();
   let domString = '';
   domString += '<div class="row wrap" id="modal-container">';
   domString += '  <div class=col-6>';
