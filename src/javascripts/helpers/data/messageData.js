@@ -1,3 +1,4 @@
+// seed data for messages that display on page load
 let messages = [
   {
     userId: 'user1',
@@ -31,21 +32,26 @@ let messages = [
   },
 ];
 
+// function that returns that array of messages
 const getMessages = () => messages;
 
+// function that adds new messages to the message array
 const setMessages = (newMessage) => {
   messages.push(newMessage);
 };
 
+// function that removes messages from the array based off of the selected user
 const removeMessages = (mId) => {
   const messageIndex = messages.findIndex((x) => x.messageId === mId);
   messages.splice(messageIndex, 1);
 };
 
+// function that is used to clear the messages from the page
 const setArray = () => {
   messages = [];
 };
 
+// function that sets max message length to 20 and removes the oldest message from page when messages are > 20
 const setLength = () => {
   if (messages.length > 20) {
     messages.shift();

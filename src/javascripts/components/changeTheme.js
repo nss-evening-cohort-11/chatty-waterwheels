@@ -3,11 +3,13 @@ import utils from '../helpers/utils';
 let backgroundClass;
 let foregroundClass;
 
+// function to close the modal for theme selection
 const closeThemeModal = () => {
   utils.printToDom('modal-container', '');
   $('#changeThemeModal').modal('hide');
 };
 
+// function that selects the background color id from radio button
 const getBackgroundRadioVal = () => {
   let val;
   Array.from($('.bg-radio-btns')).forEach((item) => {
@@ -18,6 +20,7 @@ const getBackgroundRadioVal = () => {
   return val;
 };
 
+// function that selects the text color id from radio button
 const getTextRadioVal = () => {
   let val;
   Array.from($('.text-radio-btns')).forEach((item) => {
@@ -28,6 +31,7 @@ const getTextRadioVal = () => {
   return val;
 };
 
+// function that gets the value of the radio button and assigns those values to the background and text variables
 const themeClassSetter = () => {
   if (getBackgroundRadioVal()) {
     backgroundClass = getBackgroundRadioVal();
@@ -46,6 +50,7 @@ const themeClassSetter = () => {
   closeThemeModal();
 };
 
+// function that dynamically prints the modal to the screen
 const openThemeModal = () => {
   let domString = '';
   domString += '<div class="row wrap" id="modal-container">';
@@ -91,7 +96,7 @@ const openThemeModal = () => {
   $('#cancel-theme-btn').on('click', closeThemeModal);
 };
 
-
+// event listener for the button to open the modal
 const changeThemeButtonEvent = () => {
   $('#change-theme-btn').click(openThemeModal);
 };

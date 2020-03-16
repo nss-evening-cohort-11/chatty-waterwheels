@@ -7,6 +7,7 @@ import theme from './components/changeTheme';
 import deleteMessage from './components/deleteMessage';
 import text from './helpers/data/largeTextdata';
 
+// init function that displays the messages, adds the event listeners
 const init = () => {
   displayMessages.displayAllMessages();
   $('body').on('click', '#message-submit-btn', addNewMessage.addNewMessage);
