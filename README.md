@@ -15,7 +15,7 @@ The application has to include a navbar with buttons to select a users name, an 
 
 On the messages displayed there needs to be a timestap to show when the message was sent, there should also be an option to delete your own message from the thread.
  
- ![image](chatty.png)
+ ![image](src/javascripts/screenshots/chatty.png)
 
 
 ## How to run: 
