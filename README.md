@@ -5,8 +5,7 @@ HTML5, CSS/SCSS, Vanilla Javascript, Bootstrap, Webpack
 
 ### Description:
 NSS group homework project, which introduces the use of Webpack.
-
-Design a web page that displays a grid of cards that show bears.  Scientists and park rangers may use this to add and track bears that feed on salmon in a particular river.
+This is a single-page app that simulates a chatroom with multiple users.
 
 #### Exercise Requirements
 * Ability to toggle multiple "users" in the navigation bar
