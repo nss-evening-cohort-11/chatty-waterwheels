@@ -1,4 +1,4 @@
-#Chatty (Waterwheels Group Project)
+# Chatty (Waterwheels Group Project)
 
 ### Technologies Used:
 HTML5, CSS/SCSS, Vanilla Javascript, Bootstrap, Webpack
